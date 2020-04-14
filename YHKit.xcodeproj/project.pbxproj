@@ -21,6 +21,7 @@
 		82D2F3C02441BED100E4542D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2F3BF2441BED100E4542D /* main.m */; };
 		82D2F3CA2441BED200E4542D /* YHKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2F3C92441BED200E4542D /* YHKitTests.m */; };
 		82D2F3D52441BED200E4542D /* YHKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2F3D42441BED200E4542D /* YHKitUITests.m */; };
+		82E462EC2445F6E4000EB6DD /* ExploreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E462EB2445F6E4000EB6DD /* ExploreViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		82D2F3D02441BED200E4542D /* YHKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YHKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D2F3D42441BED200E4542D /* YHKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHKitUITests.m; sourceTree = "<group>"; };
 		82D2F3D62441BED200E4542D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82E462EA2445F6E4000EB6DD /* ExploreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExploreViewController.h; sourceTree = "<group>"; };
+		82E462EB2445F6E4000EB6DD /* ExploreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExploreViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 				82D2F3E22441C01C00E4542D /* Config */,
 				82D2F3E72441C01C00E4542D /* Manager */,
 				82D2F3E52441C01C00E4542D /* Main */,
+				82E462E52445F67D000EB6DD /* Explore */,
 				82D2F3E82441C01D00E4542D /* My */,
 				82D2F3E92441C01D00E4542D /* Other */,
 				82D2F3E62441C01C00E4542D /* Tools */,
@@ -232,6 +236,47 @@
 				822BEDD72443041300BC502C /* BaseTabBarController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		82E462E52445F67D000EB6DD /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				82E462E92445F6CE000EB6DD /* Controller */,
+				82E462E62445F6CE000EB6DD /* Model */,
+				82E462E72445F6CE000EB6DD /* View */,
+				82E462E82445F6CE000EB6DD /* ViewModel */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		82E462E62445F6CE000EB6DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		82E462E72445F6CE000EB6DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82E462E82445F6CE000EB6DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		82E462E92445F6CE000EB6DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				82E462EA2445F6E4000EB6DD /* ExploreViewController.h */,
+				82E462EB2445F6E4000EB6DD /* ExploreViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E462EC2445F6E4000EB6DD /* ExploreViewController.m in Sources */,
 				822BEDD82443041300BC502C /* BaseTabBarController.m in Sources */,
 				822BEDD52443036B00BC502C /* BaseNavigationController.m in Sources */,
 				82D2F3B52441BED000E4542D /* ViewController.m in Sources */,

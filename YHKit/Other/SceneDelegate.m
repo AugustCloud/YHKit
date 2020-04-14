@@ -17,7 +17,7 @@
     
     
     
-    self.window.rootViewController = [[MainViewController alloc] init];
+    self.window.rootViewController = [[BaseTabBarController alloc] init];
     [self.window resignKeyWindow];
 }
 
