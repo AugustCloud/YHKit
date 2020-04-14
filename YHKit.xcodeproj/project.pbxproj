@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822BEDD22443031800BC502C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDD12443031700BC502C /* BaseViewController.m */; };
+		822BEDD52443036B00BC502C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDD42443036B00BC502C /* BaseNavigationController.m */; };
+		822BEDD82443041300BC502C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDD72443041300BC502C /* BaseTabBarController.m */; };
+		822BEDDB244304F200BC502C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDDA244304F200BC502C /* MainViewController.m */; };
+		822BEDDE2443050C00BC502C /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDDD2443050C00BC502C /* MyViewController.m */; };
 		82D2F3AF2441BED000E4542D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2F3AE2441BED000E4542D /* AppDelegate.m */; };
 		82D2F3B22441BED000E4542D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2F3B12441BED000E4542D /* SceneDelegate.m */; };
 		82D2F3B52441BED000E4542D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2F3B42441BED000E4542D /* ViewController.m */; };
@@ -36,6 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		822BEDD02443031700BC502C /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		822BEDD12443031700BC502C /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		822BEDD32443036B00BC502C /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		822BEDD42443036B00BC502C /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		822BEDD62443041300BC502C /* BaseTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
+		822BEDD72443041300BC502C /* BaseTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		822BEDD9244304F200BC502C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		822BEDDA244304F200BC502C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		822BEDDC2443050C00BC502C /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		822BEDDD2443050C00BC502C /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		82D2F3AA2441BED000E4542D /* YHKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D2F3AD2441BED000E4542D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82D2F3AE2441BED000E4542D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,17 +119,16 @@
 		82D2F3AC2441BED000E4542D /* YHKit */ = {
 			isa = PBXGroup;
 			children = (
-				82D2F3AD2441BED000E4542D /* AppDelegate.h */,
-				82D2F3AE2441BED000E4542D /* AppDelegate.m */,
-				82D2F3B02441BED000E4542D /* SceneDelegate.h */,
-				82D2F3B12441BED000E4542D /* SceneDelegate.m */,
-				82D2F3B32441BED000E4542D /* ViewController.h */,
-				82D2F3B42441BED000E4542D /* ViewController.m */,
-				82D2F3B62441BED000E4542D /* Main.storyboard */,
+				82D2F3EA2441C02400E4542D /* Base */,
+				82D2F3E42441C01C00E4542D /* Category */,
+				82D2F3E22441C01C00E4542D /* Config */,
+				82D2F3E72441C01C00E4542D /* Manager */,
+				82D2F3E52441C01C00E4542D /* Main */,
+				82D2F3E82441C01D00E4542D /* My */,
+				82D2F3E92441C01D00E4542D /* Other */,
+				82D2F3E62441C01C00E4542D /* Tools */,
+				82D2F3E32441C01C00E4542D /* Util */,
 				82D2F3B92441BED100E4542D /* Assets.xcassets */,
-				82D2F3BB2441BED100E4542D /* LaunchScreen.storyboard */,
-				82D2F3BE2441BED100E4542D /* Info.plist */,
-				82D2F3BF2441BED100E4542D /* main.m */,
 			);
 			path = YHKit;
 			sourceTree = "<group>";
@@ -135,6 +149,89 @@
 				82D2F3D62441BED200E4542D /* Info.plist */,
 			);
 			path = YHKitUITests;
+			sourceTree = "<group>";
+		};
+		82D2F3E22441C01C00E4542D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		82D2F3E32441C01C00E4542D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		82D2F3E42441C01C00E4542D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		82D2F3E52441C01C00E4542D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				822BEDD9244304F200BC502C /* MainViewController.h */,
+				822BEDDA244304F200BC502C /* MainViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		82D2F3E62441C01C00E4542D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		82D2F3E72441C01C00E4542D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		82D2F3E82441C01D00E4542D /* My */ = {
+			isa = PBXGroup;
+			children = (
+				822BEDDC2443050C00BC502C /* MyViewController.h */,
+				822BEDDD2443050C00BC502C /* MyViewController.m */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		82D2F3E92441C01D00E4542D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				82D2F3AD2441BED000E4542D /* AppDelegate.h */,
+				82D2F3AE2441BED000E4542D /* AppDelegate.m */,
+				82D2F3B02441BED000E4542D /* SceneDelegate.h */,
+				82D2F3B12441BED000E4542D /* SceneDelegate.m */,
+				82D2F3B32441BED000E4542D /* ViewController.h */,
+				82D2F3B42441BED000E4542D /* ViewController.m */,
+				82D2F3B62441BED000E4542D /* Main.storyboard */,
+				82D2F3BB2441BED100E4542D /* LaunchScreen.storyboard */,
+				82D2F3BF2441BED100E4542D /* main.m */,
+				82D2F3BE2441BED100E4542D /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		82D2F3EA2441C02400E4542D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				822BEDD02443031700BC502C /* BaseViewController.h */,
+				822BEDD12443031700BC502C /* BaseViewController.m */,
+				822BEDD32443036B00BC502C /* BaseNavigationController.h */,
+				822BEDD42443036B00BC502C /* BaseNavigationController.m */,
+				822BEDD62443041300BC502C /* BaseTabBarController.h */,
+				822BEDD72443041300BC502C /* BaseTabBarController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822BEDD82443041300BC502C /* BaseTabBarController.m in Sources */,
+				822BEDD52443036B00BC502C /* BaseNavigationController.m in Sources */,
 				82D2F3B52441BED000E4542D /* ViewController.m in Sources */,
+				822BEDDE2443050C00BC502C /* MyViewController.m in Sources */,
+				822BEDDB244304F200BC502C /* MainViewController.m in Sources */,
+				822BEDD22443031800BC502C /* BaseViewController.m in Sources */,
 				82D2F3AF2441BED000E4542D /* AppDelegate.m in Sources */,
 				82D2F3C02441BED100E4542D /* main.m in Sources */,
 				82D2F3B22441BED000E4542D /* SceneDelegate.m in Sources */,
@@ -441,7 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJV3NYPH9M;
-				INFOPLIST_FILE = YHKit/Info.plist;
+				INFOPLIST_FILE = YHKit/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +560,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BJV3NYPH9M;
-				INFOPLIST_FILE = YHKit/Info.plist;
+				INFOPLIST_FILE = YHKit/Other/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
