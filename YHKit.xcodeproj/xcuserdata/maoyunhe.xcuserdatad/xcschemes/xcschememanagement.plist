@@ -7,7 +7,25 @@
 		<key>YHKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>82D2F3A92441BED000E4542D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82D2F3C42441BED200E4542D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82D2F3CF2441BED200E4542D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

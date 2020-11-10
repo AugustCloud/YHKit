@@ -6,11 +6,10 @@
 //  Copyright © 2020 小河. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+#import "OCRecoverViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainViewController : UIViewController
+@interface MainViewController : OCRecoverViewController
 
 @end
 
