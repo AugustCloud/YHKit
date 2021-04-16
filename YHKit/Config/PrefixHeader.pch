@@ -25,6 +25,9 @@
 
 #import "BaseMacro.h"
 #import "Header.h"
+#import "EnumType.h"
+#import "AppUseKey.h"
+#import "InterfaceApiDelegate.h"
 
 #endif
 

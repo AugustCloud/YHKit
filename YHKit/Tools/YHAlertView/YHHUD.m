@@ -237,7 +237,7 @@ typedef NS_ENUM(NSInteger, AlertViewType) {
     hud.label.text = NSLocalizedString(message, nil);
     hud.label.font = FontWithSize(12);
     hud.mode = MBProgressHUDModeCustomView;
-    [hud hideAnimated:YES afterDelay:10];
+    [hud hideAnimated:YES afterDelay:1];
 }
 
 + (MBProgressHUD *)createMbprogressHudWith:(UIViewController *)VC {

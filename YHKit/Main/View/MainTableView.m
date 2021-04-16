@@ -19,22 +19,22 @@
 - (instancetype)initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
     self = [super initWithFrame:frame style:style];
     if (self) {
-        self.tableHeaderView = [self setupTableViewTopView];
-        self.tableFooterView = [UIView new];
-        self.delegate = self;
-        self.dataSource = self;
-        
-        //防止cell的闪动和漂移
-        self.estimatedRowHeight = 0.01;
-        self.estimatedSectionHeaderHeight = 0.01;
-        self.estimatedSectionFooterHeight = 0.01;
-        
-        [self registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
-        
-        
         if (@available(iOS 11.0, *)) {
             self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
         }
+        
+        //防止cell的闪动和漂移
+        self.estimatedRowHeight = 0;
+        self.estimatedSectionHeaderHeight = 0;
+        self.estimatedSectionFooterHeight = 0;
+        
+        self.delegate = self;
+        self.dataSource = self;
+        
+        self.tableHeaderView = [self setupTableViewTopView];
+        self.tableFooterView = [UIView new];
+        
+        [self registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     }
     
     return self;
