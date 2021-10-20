@@ -10,6 +10,10 @@
 		07C5AE510F78B8C13AA7E004 /* Pods_YHKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FABCB1FE0474F0EFD3E6902 /* Pods_YHKit.framework */; };
 		697B8E75261EECC1009A3AA3 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B8E74261EECC1009A3AA3 /* HttpRequest.m */; };
 		697B8E81261EF704009A3AA3 /* NSDictionary+ApiHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 697B8E80261EF704009A3AA3 /* NSDictionary+ApiHandle.m */; };
+		6985753126F0450200064C45 /* YHSegmentPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6985753026F0450200064C45 /* YHSegmentPageController.m */; };
+		6985753426F0456D00064C45 /* YHCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6985753326F0456D00064C45 /* YHCategoryView.m */; };
+		6992A9A22720051300A5B7A6 /* BaseViewController+DefaultSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6992A9A12720051300A5B7A6 /* BaseViewController+DefaultSetting.m */; };
+		6992A9A627200BD800A5B7A6 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6992A9A527200BD800A5B7A6 /* UIColor+Utility.m */; };
 		699709FC2629934700751BAC /* refund_add_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 699709FB2629934700751BAC /* refund_add_icon.png */; };
 		69B8E8652626E19800B3A5C1 /* YHDragExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B8E8642626E19800B3A5C1 /* YHDragExchange.m */; };
 		69B8E9022629842F00B3A5C1 /* DragExchangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B8E9002629842F00B3A5C1 /* DragExchangeCell.m */; };
@@ -74,6 +78,14 @@
 		697B8E7F261EF704009A3AA3 /* NSDictionary+ApiHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ApiHandle.h"; sourceTree = "<group>"; };
 		697B8E80261EF704009A3AA3 /* NSDictionary+ApiHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ApiHandle.m"; sourceTree = "<group>"; };
 		697B8E8A261EFE57009A3AA3 /* InterfaceApiDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceApiDelegate.h; sourceTree = "<group>"; };
+		6985752F26F0450200064C45 /* YHSegmentPageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHSegmentPageController.h; sourceTree = "<group>"; };
+		6985753026F0450200064C45 /* YHSegmentPageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHSegmentPageController.m; sourceTree = "<group>"; };
+		6985753226F0456D00064C45 /* YHCategoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHCategoryView.h; sourceTree = "<group>"; };
+		6985753326F0456D00064C45 /* YHCategoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHCategoryView.m; sourceTree = "<group>"; };
+		6992A9A02720051300A5B7A6 /* BaseViewController+DefaultSetting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseViewController+DefaultSetting.h"; sourceTree = "<group>"; };
+		6992A9A12720051300A5B7A6 /* BaseViewController+DefaultSetting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+DefaultSetting.m"; sourceTree = "<group>"; };
+		6992A9A427200BD800A5B7A6 /* UIColor+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
+		6992A9A527200BD800A5B7A6 /* UIColor+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
 		699709FB2629934700751BAC /* refund_add_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refund_add_icon.png; sourceTree = "<group>"; };
 		69B8E8632626E19800B3A5C1 /* YHDragExchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHDragExchange.h; sourceTree = "<group>"; };
 		69B8E8642626E19800B3A5C1 /* YHDragExchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YHDragExchange.m; sourceTree = "<group>"; };
@@ -206,6 +218,28 @@
 				697B8E80261EF704009A3AA3 /* NSDictionary+ApiHandle.m */,
 			);
 			path = RequestEngine;
+			sourceTree = "<group>";
+		};
+		6985752E26F0448E00064C45 /* YHSegmentPageCoontroller */ = {
+			isa = PBXGroup;
+			children = (
+				6985753226F0456D00064C45 /* YHCategoryView.h */,
+				6985753326F0456D00064C45 /* YHCategoryView.m */,
+				6985752F26F0450200064C45 /* YHSegmentPageController.h */,
+				6985753026F0450200064C45 /* YHSegmentPageController.m */,
+			);
+			path = YHSegmentPageCoontroller;
+			sourceTree = "<group>";
+		};
+		6992A9A32720052300A5B7A6 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				822BEDD02443031700BC502C /* BaseViewController.h */,
+				822BEDD12443031700BC502C /* BaseViewController.m */,
+				6992A9A02720051300A5B7A6 /* BaseViewController+DefaultSetting.h */,
+				6992A9A12720051300A5B7A6 /* BaseViewController+DefaultSetting.m */,
+			);
+			path = BaseViewController;
 			sourceTree = "<group>";
 		};
 		69970A0326299A9200751BAC /* Icon */ = {
@@ -415,6 +449,8 @@
 				8265E820247E6694007F12B8 /* UIImage+Color.m */,
 				8265E81A247E60C2007F12B8 /* UIView+Frame.h */,
 				8265E819247E60C2007F12B8 /* UIView+Frame.m */,
+				6992A9A427200BD800A5B7A6 /* UIColor+Utility.h */,
+				6992A9A527200BD800A5B7A6 /* UIColor+Utility.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -434,6 +470,7 @@
 		82D2F3E62441C01C00E4542D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6985752E26F0448E00064C45 /* YHSegmentPageCoontroller */,
 				69B8E8622626DBE200B3A5C1 /* YHDragExchange */,
 				8290213424FDE20C007FDA90 /* YHAlertView */,
 				823496112465958E00CCA4CC /* HyCycleView */,
@@ -482,8 +519,7 @@
 		82D2F3EA2441C02400E4542D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				822BEDD02443031700BC502C /* BaseViewController.h */,
-				822BEDD12443031700BC502C /* BaseViewController.m */,
+				6992A9A32720052300A5B7A6 /* BaseViewController */,
 				822BEDD32443036B00BC502C /* BaseNavigationController.h */,
 				822BEDD42443036B00BC502C /* BaseNavigationController.m */,
 				822BEDD62443041300BC502C /* BaseTabBarController.h */,
@@ -716,10 +752,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				8234961C2465958E00CCA4CC /* UIView+HyFrame.m in Sources */,
+				6985753126F0450200064C45 /* YHSegmentPageController.m in Sources */,
 				697B8E81261EF704009A3AA3 /* NSDictionary+ApiHandle.m in Sources */,
 				697B8E75261EECC1009A3AA3 /* HttpRequest.m in Sources */,
 				82E462EC2445F6E4000EB6DD /* ExploreViewController.m in Sources */,
 				8234961B2465958E00CCA4CC /* HySegmentView.m in Sources */,
+				6992A9A22720051300A5B7A6 /* BaseViewController+DefaultSetting.m in Sources */,
 				8265E81F247E655A007F12B8 /* OCRecoverViewController.m in Sources */,
 				822BEDD82443041300BC502C /* BaseTabBarController.m in Sources */,
 				8234961D2465958E00CCA4CC /* HyCycleView.m in Sources */,
@@ -733,6 +771,7 @@
 				822BEDDB244304F200BC502C /* MainViewController.m in Sources */,
 				8265E81B247E60C2007F12B8 /* UIView+Frame.m in Sources */,
 				69B8E8652626E19800B3A5C1 /* YHDragExchange.m in Sources */,
+				6992A9A627200BD800A5B7A6 /* UIColor+Utility.m in Sources */,
 				823496102465624F00CCA4CC /* YHCustomDotView.m in Sources */,
 				822BEDD22443031800BC502C /* BaseViewController.m in Sources */,
 				82D2F3AF2441BED000E4542D /* AppDelegate.m in Sources */,
@@ -742,6 +781,7 @@
 				69B8E9022629842F00B3A5C1 /* DragExchangeCell.m in Sources */,
 				82D2F3B22441BED000E4542D /* SceneDelegate.m in Sources */,
 				8234962024659ABC00CCA4CC /* YHView.m in Sources */,
+				6985753426F0456D00064C45 /* YHCategoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly, strong) CATransition *transition;
 
-- (void)updateTitle:(nullable NSAttributedString *)attributedText;
+/** 滚动更新导航的背景颜色
+ *
+ */
+- (void)scrollUploadNavBarStyleWithOffsetY:(CGFloat)offsetY
+                                viewHeight:(CGFloat)viewHeight;
 
 @end
 

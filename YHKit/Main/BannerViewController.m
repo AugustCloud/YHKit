@@ -22,6 +22,11 @@
     [self setupSubViews];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self configNavTitle:@"banner"];
+}
+
 - (void)setupSubViews {
     YHDragExchange *view = [[YHDragExchange alloc] initWithFrame:CGRectMake(0, 100, SCREENWIDTH, 141)];
     view.backgroundColor = [UIColor whiteColor];

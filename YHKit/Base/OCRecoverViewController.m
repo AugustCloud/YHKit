@@ -49,9 +49,6 @@
     [super viewDidLoad];
 }
 
-- (void)updateTitle:(nullable NSAttributedString *)attributedText {
-    
-}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -98,8 +95,51 @@
     [self.navigationController.navigationBar setBackgroundImage:self.storedNavigationBarBackgroundImage forBarMetrics:UIBarMetricsDefault];
 }
 
-#pragma mark - Getter
+/** 滚动更新导航的背景颜色
+ * 
+ */
+- (void)scrollUploadNavBarStyleWithOffsetY:(CGFloat)offsetY
+                                viewHeight:(CGFloat)viewHeight {
+    if (self.navigationController == nil) {
+        return;
+    }
+    
+    //.设置状态栏
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    
+    //.设置富文本属性
+    NSMutableDictionary *titleTextAttributes = [NSMutableDictionary dictionary];
+    [titleTextAttributes setObject:offsetY<=5?[UIColor clearColor]:[UIColor whiteColor] forKey:NSForegroundColorAttributeName];
+    [titleTextAttributes setObject:FontMediumWithSize(20) forKey:NSFontAttributeName];
 
+    if (@available(iOS 13, *)) {
+        UINavigationBarAppearance *barApp = [[UINavigationBarAppearance alloc] init];
+        //设置导航字体大小和颜色
+        barApp.titleTextAttributes = titleTextAttributes;
+        //重置导航的背景和阴影属性
+        [barApp configureWithTransparentBackground];
+        //设置导航背景图片
+        barApp.backgroundImage = [UIImage imageWithColor:[RGBACOLOR(237, 121, 133, 1) colorWithAlphaComponent:(offsetY/viewHeight)]];
+        
+        self.navigationController.navigationBar.scrollEdgeAppearance = barApp;//带scroll滑动的页面
+        self.navigationController.navigationBar.standardAppearance = barApp; // 常规页面
+    }else {
+        //设置导航字体大小和颜色
+        self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
+        //重置导航的背景和阴影属性
+        self.navigationController.navigationBar.translucent = NO;
+        //设置导航背景图片
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageWithColor:[RGBACOLOR(237, 121, 133, 1) colorWithAlphaComponent:(offsetY/viewHeight)]] forBarMetrics:UIBarMetricsDefault];
+    }
+    
+    
+    
+}
+
+
+
+
+#pragma mark - Getter
 - (CATransition *)transition {
     if (_transition == nil) {
         _transition = [[CATransition alloc] init];
