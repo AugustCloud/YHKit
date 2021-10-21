@@ -45,12 +45,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    //.设置导航默认状态
-    [self setupNavDefaultStatus];
     //.记录根视图状态
     [self recordRootPageStatue];
     //.根据根视图的状态决定返回按钮是否隐藏
     self.leftBtnItem.hidden = self.isRootPage;
+    //.设置导航默认状态
+    [self setupNavDefaultStatus];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -81,8 +81,8 @@
 /**
  * 设置导航标题
  */
-- (void)configNavTitle:(NSString *)title {
-    self.title = title;
+- (void)configNavTitle:(NSString *)navtTitle {
+    self.title = navtTitle;
 }
 
 /**
@@ -164,6 +164,10 @@
         self.rightButtonItemBlock(sender.tag);
     }
 }
+
+
+
+
 
 
 

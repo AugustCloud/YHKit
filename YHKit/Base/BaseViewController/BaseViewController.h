@@ -30,8 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 设置导航标题 (注：需要在viewWillAppear里面调用)
  */
-- (void)configNavTitle:(NSString *)title;
-
+- (void)configNavTitle:(NSString *)navtTitle;
 
 /**
  * 设置导航中间视图
@@ -57,6 +56,9 @@ NS_ASSUME_NONNULL_BEGIN
  * 示例：[@"T-客服",@"imageIcon_name"]
  */
 - (void)configRightButtonItems:(NSMutableArray *)items;
+
+
+
 
 @end
 

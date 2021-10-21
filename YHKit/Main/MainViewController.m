@@ -11,6 +11,7 @@
 #import "MainTableView.h"
 #import "BannerViewController.h"
 #import "YHHUD.h"
+#import "BaseViewController+Server.h"
 
 
 @interface MainViewController ()<MainTableViewDelegate>
@@ -70,10 +71,10 @@
         [self.navigationController pushViewController:[BannerViewController new] animated:YES];
     }else if (indexPath.row == 1) {
         //分页控制
-        
+        [YHHUD hudShowMessage:@"哈哈哈哈哈"];
     }
     
-    [YHHUD hudShowMessage:@"哈哈哈哈哈"];
+    
 }
 
 - (MainTableView *)tableView {
@@ -88,5 +89,7 @@
     
     return _tableView;
 }
+
+
 
 @end

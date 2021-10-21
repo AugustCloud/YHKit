@@ -22,13 +22,22 @@
     [super viewDidLoad];
     
     MainViewController *main = [[MainViewController alloc] init];
-    [self addChildViewController:main title:@"首页" imageName:@"tab_home_dissel" selectImageName:@"tab_home_sel"];
+    [self addChildViewController:main
+                           title:@"首页"
+                       imageName:@"tab_home_dissel"
+                 selectImageName:@"tab_home_sel"];
     
     ExploreViewController *explore = [[ExploreViewController alloc] init];
-    [self addChildViewController:explore title:@"探索" imageName:@"tab_pedding_dissel" selectImageName:@"tab_pedding_sel"];
+    [self addChildViewController:explore
+                           title:@"探索"
+                       imageName:@"tab_pedding_dissel"
+                 selectImageName:@"tab_pedding_sel"];
     
     MyViewController *my = [[MyViewController alloc] init];
-    [self addChildViewController:my title:@"我的" imageName:@"tab_bill_dissel" selectImageName:@"tab_bill_sel"];
+    [self addChildViewController:my
+                           title:@"我的"
+                       imageName:@"tab_bill_dissel"
+                 selectImageName:@"tab_bill_sel"];
 }
 
 
