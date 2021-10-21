@@ -18,5 +18,10 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    NSLog(@"导航的viewWillAppear");
+}
+
 
 @end

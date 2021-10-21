@@ -8,6 +8,7 @@
 
 #import "BannerViewController.h"
 #import "YHDragExchange.h"
+#import "BaseViewController+Server.h"
 
 @interface BannerViewController ()
 
@@ -20,11 +21,19 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupSubViews];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self configNavTitle:@"banner"];
+    [self scrollAfterSettingNavBackgroundImagColor:[UIColor whiteColor]
+                                     navTitleColor:[UIColor colorWithHexString:@"333333"]];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 }
 
 - (void)setupSubViews {

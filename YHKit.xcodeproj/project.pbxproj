@@ -20,6 +20,7 @@
 		69B8E9032629842F00B3A5C1 /* DragExchangeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69B8E9012629842F00B3A5C1 /* DragExchangeCell.xib */; };
 		69B8E909262988D400B3A5C1 /* refund_colse_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B8E907262988D300B3A5C1 /* refund_colse_icon@2x.png */; };
 		69B8E90A262988D400B3A5C1 /* refund_colse_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B8E908262988D400B3A5C1 /* refund_colse_icon@3x.png */; };
+		69C396452721419D008396F2 /* BaseViewController+Server.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C396442721419D008396F2 /* BaseViewController+Server.m */; };
 		822BEDD22443031800BC502C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDD12443031700BC502C /* BaseViewController.m */; };
 		822BEDD52443036B00BC502C /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDD42443036B00BC502C /* BaseNavigationController.m */; };
 		822BEDD82443041300BC502C /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 822BEDD72443041300BC502C /* BaseTabBarController.m */; };
@@ -94,6 +95,8 @@
 		69B8E9012629842F00B3A5C1 /* DragExchangeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DragExchangeCell.xib; sourceTree = "<group>"; };
 		69B8E907262988D300B3A5C1 /* refund_colse_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refund_colse_icon@2x.png"; sourceTree = "<group>"; };
 		69B8E908262988D400B3A5C1 /* refund_colse_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "refund_colse_icon@3x.png"; sourceTree = "<group>"; };
+		69C396432721419D008396F2 /* BaseViewController+Server.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BaseViewController+Server.h"; sourceTree = "<group>"; };
+		69C396442721419D008396F2 /* BaseViewController+Server.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BaseViewController+Server.m"; sourceTree = "<group>"; };
 		822BEDD02443031700BC502C /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		822BEDD12443031700BC502C /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		822BEDD32443036B00BC502C /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 			children = (
 				822BEDD02443031700BC502C /* BaseViewController.h */,
 				822BEDD12443031700BC502C /* BaseViewController.m */,
+				69C396432721419D008396F2 /* BaseViewController+Server.h */,
+				69C396442721419D008396F2 /* BaseViewController+Server.m */,
 				6992A9A02720051300A5B7A6 /* BaseViewController+DefaultSetting.h */,
 				6992A9A12720051300A5B7A6 /* BaseViewController+DefaultSetting.m */,
 			);
@@ -769,6 +774,7 @@
 				8265E822247E6694007F12B8 /* UIImage+Color.m in Sources */,
 				82B652DE244FE29000EA4601 /* MyViewController.m in Sources */,
 				822BEDDB244304F200BC502C /* MainViewController.m in Sources */,
+				69C396452721419D008396F2 /* BaseViewController+Server.m in Sources */,
 				8265E81B247E60C2007F12B8 /* UIView+Frame.m in Sources */,
 				69B8E8652626E19800B3A5C1 /* YHDragExchange.m in Sources */,
 				6992A9A627200BD800A5B7A6 /* UIColor+Utility.m in Sources */,
